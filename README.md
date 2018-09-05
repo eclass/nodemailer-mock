@@ -1,11 +1,11 @@
-# nodemailer-mock
+# @eclass/nodemailer-mock
 
-[![nodemailer-mock](https://img.shields.io/npm/v/nodemailer-mock.svg)](https://www.npmjs.com/package/nodemailer-mock)
-![Build Status](https://jenkins.doublesharp.com/badges/build/nodemailer-mock.svg)
-![Code Coverage](https://jenkins.doublesharp.com/badges/coverage/nodemailer-mock.svg)
-[![Dependency Status](https://david-dm.org/doublesharp/nodemailer-mock.svg)](https://david-dm.org/doublesharp/nodemailer-mock)
-[![Dev Dependency Status](https://david-dm.org/doublesharp/nodemailer-mock/dev-status.svg)](https://david-dm.org/doublesharp/nodemailer-mock?type=dev)
-![Downloads](https://img.shields.io/npm/dt/nodemailer-mock.svg)
+[![nodemailer-mock](https://img.shields.io/npm/v/@eclass/nodemailer-mock.svg)](https://www.npmjs.com/package/@eclass/nodemailer-mock)
+[![Build Status](https://img.shields.io/travis/eclass/nodemailer-mock.svg)](https://travis-ci.org/eclass/nodemailer-mock)
+[![Coverage Status](https://img.shields.io/coveralls/eclass/nodemailer-mock/master.svg?style=flat-square)](https://coveralls.io/github/eclass/nodemailer-mock?branch=master)
+[![Dependency Status](https://david-dm.org/eclass/nodemailer-mock.svg)](https://david-dm.org/eclass/nodemailer-mock)
+[![Dev Dependency Status](https://david-dm.org/eclass/nodemailer-mock/dev-status.svg)](https://david-dm.org/eclass/nodemailer-mock?type=dev)
+[![npm downloads](https://img.shields.io/npm/dm/@eclass/nodemailer-mock.svg)](https://www.npmjs.com/package/@eclass/nodemailer-mock)
 
 Mocked nodemailer module for unit testing.
 
@@ -13,11 +13,11 @@ Mocked nodemailer module for unit testing.
 
 
 ```
-npm install nodemailer-mock --save-dev
+npm install @eclass/nodemailer-mock --save-dev
 ```
 
 ```
-yarn add -D nodemailer-mock
+yarn add -D @eclass/nodemailer-mock
 ```
 
 # mock api
@@ -46,7 +46,7 @@ There are some special methods available on the mocked module to help with testi
 The mocked module behaves in a similar fashion to other transports provided by `nodemailer`.
 
 ```
-const nodemailerMock = require('nodemailer-mock');
+const nodemailerMock = require('@eclass/nodemailer-mock');
 const transport = nodemailerMock.createTransport();
 
 // the email you want to send
@@ -88,7 +88,7 @@ the unmocked version from the module cache.
 ```
 const should = require('should');
 const mockery = require('mockery');
-const nodemailerMock = require('nodemailer-mock');
+const nodemailerMock = require('@eclass/nodemailer-mock');
 
 describe('Tests that send email', function() {
 
