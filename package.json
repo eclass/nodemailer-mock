@@ -1,6 +1,6 @@
 {
   "name": "@eclass/nodemailer-mock",
-  "version": "1.3.13",
+  "version": "1.0.0",
   "description": "Mock nodemailer module for testing",
   "main": "nodemailer-mock.js",
   "directories": {
